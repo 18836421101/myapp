@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="613dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_banner"
+            android:layout_width="351dp"
+            android:layout_height="144dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="35dp"
+            android:layout_x="19dp"
+            android:layout_y="65dp" />
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_x="65dp"
+            android:layout_y="378dp"
+            android:background="@drawable/button_shape2"
+            android:text="一键翻译"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_x="66dp"
+            android:layout_y="434dp"
+            android:background="@drawable/button_shape2"
+            android:text="选择文件翻译"
+            app:backgroundTint="@null" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="310dp"
+            android:layout_height="100dp"
+            android:layout_x="37dp"
+            android:layout_y="222dp"
+            android:text="翻译结果展示" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            android:layout_x="306dp"
+            android:layout_y="297dp"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Geren2.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="392dp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/lanbai"
+                app:popupTheme="@style/Theme.Geren2.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    </AbsoluteLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

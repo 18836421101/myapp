@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ui.notifications.NotificationsFragment">
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="385dp"
+            android:layout_height="566dp"
+            android:layout_x="2dp"
+            android:layout_y="163dp" />
+
+        <TextView
+            android:id="@+id/text_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_x="0dp"
+            android:text="学习界面" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="306dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:layout_x="5dp"
+            android:layout_y="30dp"
+            android:background="@drawable/sousuolan_shpae" />
+
+        <Button
+            android:id="@+id/button2"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_x="312dp"
+            android:layout_y="28dp"
+            android:text="搜索" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_x="0dp"
+            android:layout_y="69dp" />
+
+        <Button
+            android:id="@+id/button7"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_x="300dp"
+            android:layout_y="70dp"
+            android:text="生活" />
+
+        <Button
+            android:id="@+id/button8"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_x="300dp"
+            android:layout_y="120dp"
+            android:text="美食" />
+
+        <Button
+            android:id="@+id/button3"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_x="10dp"
+            android:layout_y="70dp"
+            android:text="教育" />
+
+        <Button
+            android:id="@+id/button4"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_x="10dp"
+            android:layout_y="120dp"
+            android:text="人文" />
+
+        <Button
+            android:id="@+id/button5"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_x="155dp"
+            android:layout_y="70dp"
+            android:text="旅游" />
+
+        <Button
+            android:id="@+id/button6"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_x="155dp"
+            android:layout_y="120dp"
+            android:text="娱乐" />
+    </AbsoluteLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

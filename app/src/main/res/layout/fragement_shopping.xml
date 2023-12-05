@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ui.shopping.ShoppingFragment">
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            android:text="商城界面" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="306dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:layout_x="5dp"
+            android:layout_y="30dp"
+            android:background="@drawable/sousuolan_shpae" />
+
+        <Button
+            android:id="@+id/button2"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_shape2"
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_x="312dp"
+            android:layout_y="28dp"
+            android:text="搜索" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_banner_shopping"
+            android:layout_width="349dp"
+            android:layout_height="103dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="35dp"
+            android:layout_x="33dp"
+            android:layout_y="79dp" />
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_x="0dp"
+            android:layout_y="200dp" />
+    </AbsoluteLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

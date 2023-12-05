@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <com.example.shiyan_bottom.MyVideoView
+            android:id="@+id/videoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"   />
+    </FrameLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="234dp"
+        android:layout_height="40dp"
+        android:layout_x="86dp"
+        android:layout_y="532dp"
+        android:background="@drawable/sousuolan_shpae" />
+
+    <Button
+        android:id="@+id/button"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_shape2"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_x="132dp"
+        android:layout_y="602dp"
+        android:text="@string/zhuanhuan" />
+
+    <Button
+        android:id="@+id/button_yuyin"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_x="135dp"
+        android:layout_y="659dp"
+        android:background="@drawable/button_shape2"
+        android:text="语音输入"
+        app:backgroundTint="@null" />
+</AbsoluteLayout>
